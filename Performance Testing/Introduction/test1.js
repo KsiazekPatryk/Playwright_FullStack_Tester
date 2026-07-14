@@ -1,4 +1,5 @@
 import http from 'k6/http';
+import sleep from 'k6';
 
 export const options = {
     vus: 3,
@@ -6,5 +7,6 @@ export const options = {
     
 }
 export default function test1() {
-    http.get('https://quickpizzagrafana.com/');
+    http.get('https://quickpizza.grafana.com/');
+    sleep(1);
 }
