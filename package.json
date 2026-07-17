@@ -1,0 +1,22 @@
+{
+  "name": "playwright_fullstack_tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KsiazekPatryk/Playwright_FullStack_Tester.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KsiazekPatryk/Playwright_FullStack_Tester/issues"
+  },
+  "homepage": "https://github.com/KsiazekPatryk/Playwright_FullStack_Tester#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1"
+  }
+}
