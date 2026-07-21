@@ -1,3 +1,5 @@
+export {}
+
 const firstName = "Patrick";
 const age = 30;   
 const isAdult = true;
