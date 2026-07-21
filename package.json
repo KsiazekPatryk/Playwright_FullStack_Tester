@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KsiazekPatryk/Playwright_FullStack_Tester.git"
@@ -16,7 +21,14 @@
   },
   "homepage": "https://github.com/KsiazekPatryk/Playwright_FullStack_Tester#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.1"
+    "@types/node": "^26.1.1",
+    "eslint": "^10.7.0",
+    "eslint-plugin-playwright": "^2.10.5",
+    "globals": "^17.7.0",
+    "prettier": "^3.9.6",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.65.0"
   }
 }
