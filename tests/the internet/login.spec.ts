@@ -2,14 +2,20 @@ import { test, expect } from '@playwright/test';
 
 test.describe('The Internet Home Page', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('https://the-internet.herokuapp.com/login');
+        await page.goto('/login');
         await expect(page).toHaveTitle('The Internet');
   });
 
     test('login with valid credentials', async ({ page }) => {
-        await page.locator('#username').fill('tomsmith');
-        await page.locator('#password').fill('SuperSecretPassword!');
+        //Arange
+        const username = 'tomsmith';
+        const password = 'SuperSecretPassword!';
+        const expectedMessage = 'You logged into a secure area!';
+        //Act
+        await page.locator('#username').fill(username);
+        await page.locator('#password').fill(password);
         await page.locator('button[type="submit"]').click();
-        await expect(page.getByText('You logged into a secure area!')).toBeVisible();
+        //Assert
+        await expect(page.getByText(expectedMessage)).toBeVisible();
     });
 });
