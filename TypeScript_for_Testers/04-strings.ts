@@ -22,3 +22,15 @@ const lastName =  'Testing';
 console.log ('My name is' + firstName + ' ' + lastName);
 // Strings Templates
 console.log(`My name is ${firstName} ${lastName}`); 
+
+
+// String conversion
+// Uppercase and lowercase letters
+console.log(firstName.toUpperCase());
+console.log(firstName.toLowerCase());
+
+//Zmiana znaków/słów
+const text = 'TypeScript is awesome';
+console.log(text.replace('awesome', 'great'));
+console.log(text.replace(' ' , '_'));
+
