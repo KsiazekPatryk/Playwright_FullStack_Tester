@@ -7,7 +7,7 @@ const isFalse = false;
 console.log(isTrue);
 console.log(isFalse);
 
-// Sprawdzenie warunków
+// Checking conditions
 
 const isAdmin = true;
 
@@ -17,10 +17,10 @@ if (isAdmin) {
     console.log('You cannot edit this content');
 }
 
-//Operatory logiczne
+// Logical operators
 
-// AND && - zwraca true, jeśli oba warunki są prawdziwe.
-//Jeśli pierwszy warunek jest false, nie sprawdzam drugiego.
+// AND && - returns true if both conditions are true.
+// If the first condition is false, the second condition is not checked.
 
 const isLoggedIn = true;
 
@@ -32,5 +32,22 @@ if (isLoggedIn && hasPermission) {
     console.log('You cannot edit this content');
 }
 
-//OR - zwraca true, jeśli przynajmniej jeden warunek jest prawdziwy
+// OR || - returns true if at least one condition is true.
+const isSuperAdmin = true;
+const isModerator = false;
+
+if (isSuperAdmin || isModerator) {
+    console.log('You can edit this content');
+} else {
+    console.log('You cannot edit this content');
+}
+
+// NOT ! - returns true if the condition is false.
+const isGuest = false;
+
+if (!isGuest) {
+    console.log('You are not a guest');
+} else {
+    console.log('You are a guest');
+}
 
