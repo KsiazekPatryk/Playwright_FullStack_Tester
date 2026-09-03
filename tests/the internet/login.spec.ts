@@ -9,7 +9,7 @@ test.describe('The Internet Home Page', () => {
     test('login with valid credentials', async ({ page }) => {
         //Arange
         const username = 'tomsmith';
-        const password = 'SuperSecretPassword!';
+        const password = 'SuperSecretPassword!!';
         const expectedMessage = 'You logged into a secure area!';
         //Act
         await page.locator('#username').fill(username);
