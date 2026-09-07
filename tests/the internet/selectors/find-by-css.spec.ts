@@ -6,9 +6,9 @@ test.describe('The Internet Home Page', () => {
         await expect(page).toHaveTitle('The Internet');
     });
 
-    test('find by id=', async ({ page }) => {
-        const usernameInput = page.locator('#username');
-        const passwordInput = page.locator('#password');
+    test('find by css', async ({ page }) => {
+        const usernameInput = page.locator('input[name="username"]');
+        const passwordInput = page.locator('input[name="password"]');
 
         await expect(usernameInput).toBeVisible();
         await expect(passwordInput).toBeVisible();
