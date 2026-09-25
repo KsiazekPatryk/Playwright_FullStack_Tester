@@ -22,9 +22,6 @@ test.describe('The Internet - debug', () => {
         //Assert
         await expect(page.locator("#flash")).toContainText("Your username is invalid!");
         await expect(page.locator("#flash")).toHaveClass('flash error');
-
-
-
     });
      
 });
