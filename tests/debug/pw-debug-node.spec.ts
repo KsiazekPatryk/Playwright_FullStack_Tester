@@ -7,16 +7,16 @@ test.describe('The Internet - debug', () => {
         await expect(page).toHaveTitle('The Internet');
     });
 
-    test('pw debug mode', async ({ page }) => {
+    test('pw debug mode',{tag: '@unstable'}, async ({ page }) => {
         //Arrange 
         const username = getRandomName();
         const password = getRandomPassword();
 
-        console.log('us')
+        console.log('username:', username);
 
         //Act
-        await page.getByLabel("Username").last();
-        await page.getByLabel("Password").last();
+        await page.getByLabel("Username").fill(username);
+        await page.getByLabel("Password").fill(password);
         await page.getByRole('button', { name:'Login'}).click();
         
         //Assert
